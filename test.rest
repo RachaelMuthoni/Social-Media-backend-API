@@ -1,0 +1,31 @@
+GET http://localhost:5000
+###
+POST http://localhost:5000/register
+Content-Type: application/json
+
+{
+    "id":4,
+    "username":"Job",
+    "email":"job@gmail.com",
+    "paswd":"12345678"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"Mary",
+    "paswd":"12345678"
+}
+###
+POST http://localhost:5000/createPost
+Content-Type: application/json
+
+{
+    "id":3,
+    "profile_id":2,
+    "written_text": "hello",
+    "created":""
+}
+###
+GET http://localhost:5000/viewPost
